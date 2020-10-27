@@ -42,5 +42,3 @@ fs.copy(inputFolder, outputfolder)
 		console.log('ERROR')
 		console.error(err);
 	})
-	.finally(() => {
-})
