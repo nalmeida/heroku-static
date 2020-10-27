@@ -5,12 +5,14 @@
   "main": "index.js",
   "scripts": {
     "start": "node app.js",
-    "deploy": "git push heroku master"
+    "deploy": "git push heroku master",
+    "watch": "nodemon app.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "express-basic-auth": "^1.2.0"
   }
 }
