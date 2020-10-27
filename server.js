@@ -13,6 +13,10 @@ app.use(basicAuth({
 
 app.use(express.static('dist/'))
 
+app.get('*', function(req, res){
+  res.send('<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>404</title><link rel="stylesheet" href="https://unpkg.com/modesto@latest/modesto.min.css"></head><body><main><h1>Error 404</h1><p> Page not found. </p></body></html>', 404);
+});
+
 app.listen(port, function(){
 	console.log(`Server started on http://localhost:${port}`);
 });
