@@ -11,9 +11,7 @@ app.use(basicAuth({
 	challenge: true,
 }));
 
-app.get('/', function(req, res) {
-  res.send('<h1> Hello heroku-static!')
-});
+app.use(express.static('dist/'))
 
 app.listen(port, function(){
 	console.log(`Server started on http://localhost:${port}`);
