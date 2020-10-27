@@ -1,0 +1,12 @@
+body {
+	background-color: var(--color-bg-light);
+}
+main {
+	max-width: 54em;
+	margin: 0 auto;
+	background-color: #FFF;
+	padding: 2em;
+	min-height: 100vh;
+	border-left: 1px solid var(--color-bg);
+	border-right: 1px solid var(--color-bg);
+}

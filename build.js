@@ -23,14 +23,29 @@ const options = {
 	to: now
 };
 
-replace(options)
-	.then(results => {
-		console.log('✅ Replacement results:', results);
-		console.log('✅ Build COMPLETE.');
+console.log('-----------')
+
+fs.copy(inputFolder, outputfolder)
+	.then(() => {
+		console.log('-----------');
+		console.log('✅ File copy COMPLETE.');
 	})
-	.catch(error => {
-		console.error('Error occurred:', error);
+	.catch(err => {
+		console.log('ERROR')
+		console.error(err);
 	})
-	.finally(function() {
-		console.log('-----------')
-	});
+	.finally(() => {
+
+		replace(options)
+			.then(results => {
+				console.log('✅ Replacement results:', results);
+				console.log('✅ Build COMPLETE.');
+			})
+			.catch(error => {
+				console.error('Error occurred:', error);
+			})
+			.finally(() => {
+				console.log('-----------');
+		});
+
+})
