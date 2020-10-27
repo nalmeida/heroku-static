@@ -5,6 +5,7 @@ const port = process.env.PORT || 3000;
 
 const app = express();
 
+// @source: https://medium.com/javascript-in-plain-english/add-basic-authentication-to-an-express-app-9536f5095e88
 app.use(basicAuth({
 	users: { 'admin': 'admin' },
 	challenge: true,
