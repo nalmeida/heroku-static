@@ -3,7 +3,7 @@ const replace = require('replace-in-file');
 
 const inputFolder = './src';
 const outputfolder = './dist';
-const date = new Date();
+const date = new Date(new Date().toLocaleString('pt-BR', {timeZone: 'America/Argentina/Buenos_Aires', hour12: false}));
 
 const now = date.getDate() + '/' + (date.getMonth()+1) + '/' + date.getFullYear() + ' - ' + date.toLocaleTimeString('pt', { hour12: false });
 
