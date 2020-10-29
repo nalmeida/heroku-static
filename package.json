@@ -6,7 +6,7 @@
   "scripts": {
     "build": "node build.js",
     "deploy": "git push heroku master",
-    "start": "./node_modules/nodemon/bin/nodemon.js server.js"
+    "server": "./node_modules/nodemon/bin/nodemon.js server.js"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +15,7 @@
     "express": "^4.17.1",
     "express-basic-auth": "^1.2.0",
     "fs-extra": "^9.0.1",
+    "morgan": "^1.10.0",
     "nodemon": "^2.0.6",
     "replace-in-file": "^6.1.0"
   }

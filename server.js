@@ -1,10 +1,13 @@
 // @source: https://dzone.com/articles/deploy-your-node-express-app-on-heroku-in-8-easy-s
 const express = require('express');
 const basicAuth = require('express-basic-auth');
+const morgan = require('morgan');
 
 const port = process.env.PORT || 3000;
 
 const app = express();
+
+app.use(morgan('common'));
 
 // @source: https://medium.com/javascript-in-plain-english/add-basic-authentication-to-an-express-app-9536f5095e88
 app.use(basicAuth({
