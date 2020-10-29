@@ -1,1 +1,1 @@
-web: node build.js && ./node_modules/nodemon/bin/nodemon.js server.js
+web: npm run build_and_serve
