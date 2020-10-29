@@ -1,1 +1,1 @@
-web: node build.js && node server.js
+web: node build.js && ./node_modules/nodemon/bin/nodemon.js server.js
