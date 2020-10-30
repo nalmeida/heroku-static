@@ -22,7 +22,7 @@ const copyFolder = () => {
 					console.error(' 🛑Error occurred:', error);
 				}
 			})
-			.catch(err => {
+			.catch(error => {
 				console.log('ERROR')
 				console.error(' 🛑Error occurred:', error);
 			})
