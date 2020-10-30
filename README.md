@@ -6,14 +6,16 @@ Este é um _starter_ / modelo para se fazer um _deploy_ de um site estático com
 
 👉 O site funcionando pode ser visto em: https://heroku-static-sample.herokuapp.com/
 
-É um projeto de exemplo bastante simples com um processo de `build` que faz cópia dos arquivos de `./src` para `./dist` e substitui uma variável `__DATE__` dentro dos arquivos, só para registrar a hora em que o último deploy foi feito.
-
-Ele serve de modelo para projetos mais sofisticados e pode contar também com rotas dinâmicas servidas pelo `express`.
-
-#### Acesso
+#### Credenciais de acesso
 
 * login: `admin`
 * senha: `admin`
+
+## Sobre o projeto
+
+É um projeto de exemplo bastante simples com um processo de `build` que faz cópia dos arquivos de `./src` para `./dist` e substitui uma variável `__DATE__` dentro dos arquivos, só para registrar a hora em que o último deploy foi feito.
+
+Ele serve de modelo para projetos mais sofisticados e pode contar também com rotas dinâmicas servidas pelo `express`.
 
 ## Pré-requisitos
 
