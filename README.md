@@ -53,11 +53,16 @@ Contém as configurações do Heroku que, neste projeto, roda o `build` e já so
 * `build_and_serve`: roda o script de `build` e `server` encadeados
 * `deploy`: roda o comando de **deploy** (`git push heroku master`) no Heroku
 
-# Deploy no Heroku
+## Criando seu projeto no Heroku
 
-1. `heroku login` para se autenticar no Heroku (_uma vez autenticado, esse passo não será mais necessário_)
+Os comandos abaixo só são necessários uma vez.
+
+1. `heroku login` para se autenticar no Heroku
 2. `heroku create NOME_DO_SEU_PROJETO` para criar a url de deploy do seu projeto
-3. `npm run deploy` para publicar o site
+
+## Deploy no Heroku
+
+1. `npm run deploy` para publicar o site
 
 ## Comandos úteis
 
