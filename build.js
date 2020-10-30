@@ -1,5 +1,5 @@
 const fs = require('fs-extra');
-const replace = require('replace-in-file');
+const replace = require('replace-in-files');
 
 const inputFolder = './src';
 const outputfolder = './dist';
@@ -37,7 +37,7 @@ const replaceDate = () => {
 		const now = new Date().toLocaleString('pt-BR', {timeZone: 'America/Argentina/Buenos_Aires', hour12: false});;
 
 		const options = {
-			files: outputfolder + '/index.html',
+			files: outputfolder + '/**/*',
 			from: /__DATE__/g,
 			to: now
 		};
@@ -46,7 +46,7 @@ const replaceDate = () => {
 			.then(results => {
 				try {
 					console.log(' 👉 Replacing:', options.from, ' to:', options.to);
-					console.log(' ✅ Replacement results:', results);
+					console.log(' ✅ Replacement results:\n', results);
 					resolve();
 				} catch (error) {
 					console.error(' 🛑Error occurred:', error);
