@@ -31,16 +31,20 @@ Ele serve de modelo para projetos mais sofisticados e pode contar também com ro
 
 É um projeto bastante simples com 2 scripts:
 
-### `build.js`
+### [`./build.js`](./build.js)
 
 1. Faz cópia dos arquivos `./src` para um diretório `./dist`
 2. Substitui a variável `__DATE__` dentro de todos os arquivos onde ela aparecer pela data e hora em que o processo rodou
 
-### `server.js`
+### [`./server.js`](./server.js)
 
 Sobe um servidor `express` para que serve os arquivos `./dist` estaticamente.
 
-### Comandos disponíveis no `package.json`
+### [`./Procfile`](./Procfile)
+
+Contém as configurações do Heroku que, neste projeto, roda o `build` e já sobe o servidor (`server`) `express` através do comando `web: npm run build_and_serve`
+
+### Comandos disponíveis no `./package.json`
 
 * `build`: roda o script de `build.js`
 * `server`: roda o script de `server.js` utilizando o `nodemon` para atualizar sempre que o arquivo `server.js` for alterado
