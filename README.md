@@ -40,7 +40,7 @@ Ele serve de modelo para projetos mais sofisticados e pode contar também com ro
 
 #### [`./server.js`](./server.js)
 
-Sobe um servidor `express` para que serve os arquivos `./dist` estaticamente.
+Sobe um servidor `express` que serve o diretório `./dist` estaticamente.
 
 #### [`./Procfile`](./Procfile)
 
