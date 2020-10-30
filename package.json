@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build": "node build.js",
-    "deploy": "git push heroku master",
     "server": "./node_modules/nodemon/bin/nodemon.js server.js",
-    "build_and_serve": "npm run build && npm run server"
+    "build_and_serve": "npm run build && npm run server",
+    "deploy": "git push heroku master"
   },
   "keywords": [],
   "author": "",
