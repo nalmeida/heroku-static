@@ -13,7 +13,7 @@ Este é um _starter_ / modelo para se fazer um _deploy_ de um site estático com
 
 ## Sobre o projeto
 
-É um projeto de exemplo bastante simples com um processo de `build` que faz cópia dos arquivos de `./src` para `./dist` e substitui uma variável `__DATE__` dentro dos arquivos, só para registrar a hora em que o último deploy foi feito.
+É um projeto de exemplo bastante simples com um processo de `build` que faz cópia dos arquivos de `./src` para `./dist` e substitui uma variável `__DATE__` dentro dos arquivos, só para registrar a dia e hora em que o último deploy foi feito.
 
 Ele serve de modelo para projetos mais sofisticados e pode contar também com rotas dinâmicas servidas pelo `express`.
 
@@ -33,29 +33,29 @@ Ele serve de modelo para projetos mais sofisticados e pode contar também com ro
 
 É um projeto bastante simples com 2 scripts:
 
-### [`./build.js`](./build.js)
+#### [`./build.js`](./build.js)
 
 1. Faz cópia dos arquivos `./src` para um diretório `./dist`
 2. Substitui a variável `__DATE__` dentro de todos os arquivos onde ela aparecer pela data e hora em que o processo rodou
 
-### [`./server.js`](./server.js)
+#### [`./server.js`](./server.js)
 
 Sobe um servidor `express` para que serve os arquivos `./dist` estaticamente.
 
-### [`./Procfile`](./Procfile)
+#### [`./Procfile`](./Procfile)
 
 Contém as configurações do Heroku que, neste projeto, roda o `build` e já sobe o servidor (`server`) `express` através do comando `web: npm run build_and_serve`
 
-### Comandos disponíveis no `./package.json`
+### Comandos disponíveis no [`./package.json`](./package.json)
 
 * `build`: roda o script de `build.js`
 * `server`: roda o script de `server.js` utilizando o `nodemon` para atualizar sempre que o arquivo `server.js` for alterado
 * `build_and_serve`: roda o script de `build` e `server` encadeados
-* `deploy`: roda o comando de **deploy** no Heroku
+* `deploy`: roda o comando de **deploy** (`git push heroku master`) no Heroku
 
 # Deploy no Heroku
 
-1. Rode o comando `heroku login` para se autenticar no Heroku (uma vez autenticado, esse passo não será mais necessário)
+1. Rode o comando `heroku login` para se autenticar no Heroku (_uma vez autenticado, esse passo não será mais necessário_)
 2. Rode o comando `heroku create NOME_DO_SEU_PROJETO` par fazer o deploy
 
 ## Comandos úteis
