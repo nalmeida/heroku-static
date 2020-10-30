@@ -55,8 +55,9 @@ Contém as configurações do Heroku que, neste projeto, roda o `build` e já so
 
 # Deploy no Heroku
 
-1. Rode o comando `heroku login` para se autenticar no Heroku (_uma vez autenticado, esse passo não será mais necessário_)
-2. Rode o comando `heroku create NOME_DO_SEU_PROJETO` par fazer o deploy
+1. `heroku login` para se autenticar no Heroku (_uma vez autenticado, esse passo não será mais necessário_)
+2. `heroku create NOME_DO_SEU_PROJETO` para criar a url de deploy do seu projeto
+3. `npm run deploy` para publicar o site
 
 ## Comandos úteis
 
